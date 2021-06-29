@@ -6,19 +6,19 @@
     /* Typespace */
     @font-face {
         font-family: "GenSenMaruGothicTW";
-        src: url(assets/GenSenMaruGothicTW/GenSenMaruGothicTW-Bold.ttf) format('truetype');
+        src: url(/static/GenSenMaruGothicTW/GenSenMaruGothicTW-Bold.ttf) format('truetype');
         font-weight: bold;
         font-style: normal;
     }
     @font-face {
         font-family: "GenSenMaruGothicTW";
-        src: url(assets/GenSenMaruGothicTW/GenSenMaruGothicTW-Medium.ttf) format('truetype');
+        src: url(/static/GenSenMaruGothicTW/GenSenMaruGothicTW-Medium.ttf) format('truetype');
         font-weight: medium;
         font-style: normal;
     }
     @font-face {
         font-family: "GenSenMaruGothicTW";
-        src: url(assets/GenSenMaruGothicTW/GenSenMaruGothicTW-Regular.ttf) format('truetype');
+        src: url(/static/GenSenMaruGothicTW/GenSenMaruGothicTW-Regular.ttf) format('truetype');
         font-weight: normal;
         font-style: normal;
     }
@@ -439,19 +439,19 @@
     /* Typespace */
     @font-face {
         font-family: "GenSenMaruGothicTW";
-        src: url(assets/GenSenMaruGothicTW/GenSenMaruGothicTW-Bold.ttf) format('truetype');
+        src: url(/static/GenSenMaruGothicTW/GenSenMaruGothicTW-Bold.ttf) format('truetype');
         font-weight: bold;
         font-style: normal;
     }
     @font-face {
         font-family: "GenSenMaruGothicTW";
-        src: url(assets/GenSenMaruGothicTW/GenSenMaruGothicTW-Medium.ttf) format('truetype');
+        src: url(/static/GenSenMaruGothicTW/GenSenMaruGothicTW-Medium.ttf) format('truetype');
         font-weight: medium;
         font-style: normal;
     }
     @font-face {
         font-family: "GenSenMaruGothicTW";
-        src: url(assets/GenSenMaruGothicTW/GenSenMaruGothicTW-Regular.ttf) format('truetype');
+        src: url(/static/GenSenMaruGothicTW/GenSenMaruGothicTW-Regular.ttf) format('truetype');
         font-weight: normal;
         font-style: normal;
     }
@@ -879,19 +879,19 @@
     /* Typespace */
     @font-face {
         font-family: "GenSenMaruGothicTW";
-        src: url(assets/GenSenMaruGothicTW/GenSenMaruGothicTW-Bold.ttf) format('truetype');
+        src: url(/static/GenSenMaruGothicTW/GenSenMaruGothicTW-Bold.ttf) format('truetype');
         font-weight: bold;
         font-style: normal;
     }
     @font-face {
         font-family: "GenSenMaruGothicTW";
-        src: url(assets/GenSenMaruGothicTW/GenSenMaruGothicTW-Medium.ttf) format('truetype');
+        src: url(/static/GenSenMaruGothicTW/GenSenMaruGothicTW-Medium.ttf) format('truetype');
         font-weight: medium;
         font-style: normal;
     }
     @font-face {
         font-family: "GenSenMaruGothicTW";
-        src: url(assets/GenSenMaruGothicTW/GenSenMaruGothicTW-Regular.ttf) format('truetype');
+        src: url(/static/GenSenMaruGothicTW/GenSenMaruGothicTW-Regular.ttf) format('truetype');
         font-weight: normal;
         font-style: normal;
     }
