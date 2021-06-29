@@ -37,6 +37,10 @@ def callback():
 def home():
     return render_template("cover.html")
 
+@app.route("/vote") 
+def vote():
+    return render_template("votes.html")
+
 @app.route("/forms", methods=['GET']) #根目錄
 def forms():
     conn = psycopg2.connect(DATABASE_URL, sslmode='require')
