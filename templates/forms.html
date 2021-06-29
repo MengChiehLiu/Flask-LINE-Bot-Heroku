@@ -38,7 +38,7 @@
             <form action="/sendresult" method="POST">
                 <label for="exampleInputEmail1">選擇傳情對象</label>
                 <select class="select-box" aria-label=".form-select-lg example" name="UID" method="GET" required action="/">
-                    <option selected>請選擇傳送對象</option>
+                    <option selected value="">請選擇傳送對象</option>
                 {% for x, y in table %}
                     <option value="{{ x }}">{{ y }}</option>
                 {% endfor %}
