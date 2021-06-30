@@ -41,6 +41,10 @@ def home():
 def vote():
     return render_template("votes.html")
 
+@app.route("/thanks_card") 
+def thanks_card():
+    return render_template("thanks_card.html")
+
 @app.route("/forms", methods=['GET']) #根目錄
 def forms():
     conn = psycopg2.connect(DATABASE_URL, sslmode='require')
