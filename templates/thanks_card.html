@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <title>我要傳情</title> 
+        <!--<link rel="icon" href="favicon.png" sizes="16x16">-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    
+    
+    <body>
+        <div id="wrapper_for_sticky_footer">
+        <div id="bg">
+            <div class="img-mobile">
+                <img src="assets/star-left.png" alt="star" class="img-star-left">
+                <img src="assets/star-right.png" alt="star" class="img-star-right">
+                <img src="assets/cloud-1.png" class="bg-cloud" style="z-index: -2;">
+                <img src="assets/cloud-2.png" class="bg-cloud" style="z-index: -3;">
+            </div>
+
+            <div class="img-tablet">
+                <img src="assets/star-left-web.png" alt="star" class="img-star-left">
+                <img src="assets/star-right-web.png" alt="star" class="img-star-right">
+                <img src="assets/cloud-form-web.png" alt="bg-cloud" class="bg-cloud-web">
+            </div>
+
+            <div class="img-web">
+                <img src="assets/star-left-web.png" alt="star" class="img-star-left">
+                <img src="assets/star-right-web.png" alt="star" class="img-star-right">
+                <img src="assets/cloud-form-web.png" alt="bg-cloud" class="bg-cloud-web">
+            </div>
+        </div>
+
+        <section id="form" class="center-aligned">
+            <h1>謝師卡頁面試作！</h1>
+            <table>
+                <tr>
+                    <td>
+                        <a href="https://issuu.com/ricebugj/docs/_">
+                            <img src="/static/gif/凌菁.gif" width=100% height=width ></a>
+                    </td>
+                    <td><img src="/static/gif/凌菁.gif" width=100% height=width ></td>
+                    <td><img src="/static/gif/凌菁.gif" width=100% height=width ></td>
+                </tr>
+                <tr>
+                    <td align="center"><a href="https://issuu.com/ricebugj/docs/_">詹凌菁老師</a></td>
+                    <td align="center"><a>詹凌菁老師</a></td>
+                    <td align="center"><a>詹凌菁老師</a></td>
+                </tr>
+                <tr>
+                    <td><img src="/static/gif/凌菁.gif" width=100% height=width ></td>
+                    <td><img src="/static/gif/小天使.png" width=100% height=width ></td>
+                    <td><img src="/static/gif/凌菁.gif" width=100% height=width ></td>
+                </tr>
+                <tr>
+                    <td align="center"><a>詹凌菁老師</a></td>
+                    <td align="center"><a>詹凌菁老師</a></td>
+                    <td align="center"><a>詹凌菁老師</a></td>
+                </tr>
+                <tr>
+                    <td><img src="/static/gif/凌菁.gif" width=100% height=width ></td>
+                    <td><img src="/static/gif/凌菁.gif" width=100% height=width ></td>
+                    <td><img src="/static/gif/凌菁.gif" width=100% height=width ></td>
+                </tr>
+                <tr>
+                    <td align="center"><a>詹凌菁老師</a></td>
+                    <td align="center"><a>詹凌菁老師</a></td>
+                    <td align="center"><a>詹凌菁老師</a></td>
+                </tr>
+            </table>
+
+            
+            <iframe allowfullscreen allow="fullscreen" style="border:none;width:100%;height:500px;" src="https://issuu.com/ricebugj/docs/_"></iframe>
+        </section>
+       
+        </div>
+        <footer class="flexbox-horizontal">
+            <div class="flexbox-vertical" style="align-items: flex-start;">
+                <tiny>@NCCU ACCT 2021</tiny>>
+                <tiny style="position: relative; top: -10px;">By MengChiehLiu  |  Lili Lin</tiny>
+            </div>
+            <img src="assets/icon-github.png" alt="icon-github" class="icon-github">
+        </footer>
+    </body>
+</html>
+
+<script>
+    function videoPlayback(){
+        //獲取視訊標籤
+        var video = document.getElementById('video'); 
+        //給視訊標籤新增快取播放---video標籤屬性。
+        video.setAttribute("autoplay","autoplay")
+        //給視訊標籤新增迴圈播放---video標籤屬性。
+        video.setAttribute("loop","loop")
+        //播放視訊
+        video.play();
+    }
+
+    function videoStopped(){
+        //獲取視訊標籤
+        var oDiv = document.getElementById('video'); 
+        //停止播放
+        video.pause();
+    }
+</script>
