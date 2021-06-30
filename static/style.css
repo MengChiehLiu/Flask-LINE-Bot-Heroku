@@ -937,7 +937,7 @@
         height: 48px;
     }
     .hover-box {
-        flex: 100%;
+        flex: 50%;
         margin-top:8px;
         background: #4d674a;
         box-sizing: border-box;
@@ -1452,7 +1452,7 @@
     }
       
       .hover-box {
-        flex: 100%;
+        flex: 33.33%;
         margin-top:8px;
         background: #4d674a;
         box-sizing: border-box;
