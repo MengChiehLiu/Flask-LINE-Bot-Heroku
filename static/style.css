@@ -430,8 +430,7 @@
         height: 24px;
     }
     .hover-box {
-        max-width: 100%;
-        max-height: 100%;
+        flex: 100%;
         margin-top:8px;
         background: #4d674a;
         box-sizing: border-box;
@@ -439,6 +438,7 @@
       }
       
       .hover-box .img-box {
+        flex: 100%;
         position: relative;
         overflow: hidden;
       }
@@ -939,8 +939,7 @@
         height: 48px;
     }
     .hover-box {
-        max-width: 100%;
-        max-height: 100%;
+        flex: 100%;
         margin-top:8px;
         background: #4d674a;
         box-sizing: border-box;
@@ -948,6 +947,7 @@
       }
       
       .hover-box .img-box {
+        flex: 100%;
         position: relative;
         overflow: hidden;
       }
@@ -990,7 +990,7 @@
 
       .row {
         display: inline-flex;
-        width: 100%;
+        width: 50%;
         flex-wrap: wrap;
         padding: 0 4px;
       }
@@ -1456,8 +1456,7 @@
     }
       
       .hover-box {
-        max-width: 100%;
-        max-height: 100%;
+        flex: 100%;
         margin-top:8px;
         background: #4d674a;
         box-sizing: border-box;
@@ -1465,6 +1464,7 @@
       }
       
       .hover-box .img-box {
+        flex: 100%;
         position: relative;
         overflow: hidden;
       }
@@ -1522,6 +1522,6 @@
       .column img {
         margin-top:8px;
         vertical-align: middle;
-         width: 100%;
+        width: 100%;
       }
 }
