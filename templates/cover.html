@@ -4,13 +4,13 @@
         <title>2021 政大會計傳情小天使</title> 
         <!--<link rel="icon" href="/static/favicon.png" sizes="16x16">-->
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, height=device-height, minimum-scale=1.0">
         <link rel="icon" type="image/x-icon" href="/static/favicon.ico"/>
         <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico"/>
         <link rel="stylesheet" href="/static/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
-    <body>
+    <body class="">
         <div id="wrapper_for_sticky_footer">
         <div id="bg">
             <div class="img-mobile">
@@ -32,6 +32,40 @@
                 <img src="/static/star-right-web.png" alt="star" class="img-star-right">
                 <img src="/static/cloud-web.png" alt="bg-cloud" class="bg-cloud-web">
             </div>
+        </div>
+            
+        <header id="header" class="header">
+            <div class="img-mobile">
+                <img src="/static/icon-hamburger.png" alt="hamburger-menu" class="icon-hamburger">
+            </div>
+            <div class="img-tablet">
+                <img src="/static/icon-hamburger.png" alt="hamburger-menu" class="icon-hamburger">
+            </div>
+
+            <div class="img-web">
+                <!-- Web Sticky Header -->
+                <div class="flexbox-horizontal-web" style="align-items: center;">
+                    <img src="/static/icon-angel.png" alt="icon-angel" class="icon-angel">
+                    <div>
+                        <a href="cover.html" class="menu">首頁</a>
+                        <a href="forms.html" class="menu">傳情 &#9993;&#xFE0F;</a>
+                        <a href="board.html" class="menu">留言板 &#9997;&#xFE0F;</a>
+                        <a href="votes.html" class="menu">投票所 &#128499;</a>
+                        <a href="votes.html" class="menu">謝師函 &#127880;</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+
+        <!-- Mobile Hamburger Menu -->
+        <div id="hamburger-menu" class="">
+            <a href="cover.html" class="menu">首頁</a>
+            <a href="forms.html" class="menu">傳情 &#9993;&#xFE0F;</a>
+            <a href="board.html" class="menu">留言板 &#9997;&#xFE0F;</a>
+            <a href="votes.html" class="menu">投票所 &#128499;</a>
+            <a href="votes.html" class="menu">謝師函 &#127880;</a>
+            <img src="/static/icon-close.png" alt="icon-close" class="icon-close">
         </div>
 
         <section id="intro" class="flexbox-vertical">
@@ -146,4 +180,6 @@
         </footer>
     </body>
     <script src="/static/script.js"></script>
+    <script src="/static/hamburger-menu.js"></script>
+</html>
 </html>
