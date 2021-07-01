@@ -13,6 +13,7 @@
 
     <body>
         <div id="wrapper_for_sticky_footer">
+            <div id="bg">
             <div class="img-mobile">
                 <img src="/static/star-left.png" alt="star" class="img-star-left">
                 <img src="/static/star-right.png" alt="star" class="img-star-right">
@@ -30,7 +31,42 @@
                 <img src="/static/star-right-web.png" alt="star" class="img-star-right">
                 <img src="/static/cloud-success-web.png" alt="background" class="bg-success-web">
             </div>
+            </div>
 
+        <header id="header" class="sticky">
+            <div class="img-mobile">
+                <img src="/static/icon-hamburger.png" alt="hamburger-menu" class="icon-hamburger">
+            </div>
+            <div class="img-tablet">
+                <img src="/static/icon-hamburger.png" alt="hamburger-menu" class="icon-hamburger">
+            </div>
+
+            <div class="img-web">
+                <!-- Web Sticky Header -->
+                <div class="flexbox-horizontal-web" style="align-items: center;">
+                    <img src="/static/icon-angel.png" alt="icon-angel" class="icon-angel">
+                    <div>
+                        <a href="/home" class="menu">首頁</a>
+                        <a href="/forms" class="menu">傳情 &#9993;&#xFE0F;</a>
+                        <a href="/board" class="menu">留言板 &#9997;&#xFE0F;</a>
+                        <a href="/votes" class="menu">投票所 &#128499;</a>
+                        <a href="/thanks_card" class="menu">謝師函 &#127880;</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+
+        <!-- Mobile Hamburger Menu -->
+        <div id="hamburger-menu" class="">
+            <a href="/home" class="menu">首頁</a>
+            <a href=/forms" class="menu">傳情 &#9993;&#xFE0F;</a>
+            <a href="/board" class="menu">留言板 &#9997;&#xFE0F;</a>
+            <a href="/votes" class="menu">投票所 &#128499;</a>
+            <a href="/thanks_card" class="menu">謝師函 &#127880;</a>
+            <img src="/static/icon-close.png" alt="icon-close" class="icon-close">
+        </div>
+            
         <section id="success" class="flexbox-vertical center-aligned">
             <img src="/static/angel-light.gif" alt="angel" class="img-mobile gif-angel" style="z-index: -1;">
             <img src="/static/angel-light.gif" alt="angel" class="img-tablet gif-angel" style="z-index: -1;">
@@ -55,4 +91,5 @@
               <img src="/static/icon-github.png" alt="icon-github" class="icon-github">
           </footer>
     </body>
+    <script src="/static/hamburger-menu.js"></script>
 </html>
