@@ -14,29 +14,57 @@
         <div id="wrapper_for_sticky_footer">
         <div id="bg">
             <div class="img-mobile">
-                <img src="/static/star-left.png" alt="star" class="img-star-left">
-                <img src="/static/star-right.png" alt="star" class="img-star-right">
                 <img src="/static/cloud-1.png" class="bg-cloud" style="z-index: -2;">
                 <img src="/static/cloud-2.png" class="bg-cloud" style="z-index: -3;">
             </div>
 
             <div class="img-tablet">
-                <img src="/static/star-left-web.png" alt="star" class="img-star-left">
-                <img src="/static/star-right-web.png" alt="star" class="img-star-right">
                 <img src="/static/cloud-form-web.png" alt="bg-cloud" class="bg-cloud-web">
             </div>
 
             <div class="img-web">
-                <img src="/static/star-left-web.png" alt="star" class="img-star-left">
-                <img src="/static/star-right-web.png" alt="star" class="img-star-right">
                 <img src="/static/cloud-form-web.png" alt="bg-cloud" class="bg-cloud-web">
             </div>
+        </div>
+            
+        <header id="header" class="sticky">
+            <div class="img-mobile">
+                <img src="/static/icon-hamburger.png" alt="hamburger-menu" class="icon-hamburger">
+            </div>
+            <div class="img-tablet">
+                <img src="/static/icon-hamburger.png" alt="hamburger-menu" class="icon-hamburger">
+            </div>
+
+            <div class="img-web">
+                <!-- Web Sticky Header -->
+                <div class="flexbox-horizontal-web" style="align-items: center;">
+                    <img src="/static/icon-angel.png" alt="icon-angel" class="icon-angel">
+                    <div>
+                        <a href="/home" class="menu">首頁</a>
+                        <a href="/forms" class="menu">傳情 &#9993;&#xFE0F;</a>
+                        <a href="/board" class="menu">留言板 &#9997;&#xFE0F;</a>
+                        <a href="/votes" class="menu">投票所 &#128499;</a>
+                        <a href="/thanks_card" class="menu">謝師函 &#127880;</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+
+        <!-- Mobile Hamburger Menu -->
+        <div id="hamburger-menu" class="">
+            <a href="/home" class="menu">首頁</a>
+            <a href=/forms" class="menu">傳情 &#9993;&#xFE0F;</a>
+            <a href="/board" class="menu">留言板 &#9997;&#xFE0F;</a>
+            <a href="/votes" class="menu">投票所 &#128499;</a>
+            <a href="/thanks_card" class="menu">謝師函 &#127880;</a>
+            <img src="/static/icon-close.png" alt="icon-close" class="icon-close">
         </div>
             
         <script>(function(d, s, id) {var js, timetacojs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src ='https://www.timetaco.com/static/js/embed.js';timetacojs.parentNode.insertBefore(js, timetacojs);}(document, 'script', 'timetaco-jssdk'));</script>
         <div class='timetaco-list' data-timetacoid='fqxrqk'></div>
             
-        <section id="form" class="center-aligned">
+        <section id="vote" class="center-aligned">
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd-2iZH7pOdolg25IjAUBfvHLv6WNDreMlfJeyuEX8in_V3ZQ/viewform?embedded=true" width="100%" height="1618" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
         </section>
        
@@ -47,6 +75,7 @@
                 <tiny style="position: relative; top: -10px;">By MengChiehLiu  |  Lili Lin</tiny>
             </div>
             <img src="/static/icon-github.png" alt="icon-github" class="icon-github">
-        </footer>
+        </footer>                                                                   
     </body>
+    <script src="/static/hamburger-menu.js"></script>
 </html>
