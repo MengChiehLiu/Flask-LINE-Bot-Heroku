@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <title>留言板</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/style.css">
+        <link rel="icon" type="image/x-icon" href="/static/favicon.ico"/>
+        <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="wrapper_for_sticky_footer">
+        <div id="bg">
+            <div class="img-mobile">
+                <img src="/static/star-left.png" alt="star" class="img-star-left">
+                <img src="/static/star-right.png" alt="star" class="img-star-right">
+                <img src="/static/cloud-1.png" class="bg-cloud" style="z-index: -2;">
+                <img src="/static/cloud-2.png" class="bg-cloud" style="z-index: -3;">
+            </div>
+
+            <div class="img-tablet">
+                <img src="/static/star-left-web.png" alt="star" class="img-star-left">
+                <img src="/static/star-right-web.png" alt="star" class="img-star-right">
+                <img src="/static/cloud-form-web.png" alt="bg-cloud" class="bg-cloud-web">
+            </div>
+
+            <div class="img-web">
+                <img src="/static/star-left-web.png" alt="star" class="img-star-left">
+                <img src="/static/star-right-web.png" alt="star" class="img-star-right">
+                <img src="/static/cloud-form-web.png" alt="bg-cloud" class="bg-cloud-web">
+            </div>
+        </div>
+
+        <header id="header" class="sticky">
+            <div class="img-mobile">
+                <img src="/static/icon-hamburger.png" alt="hamburger-menu" class="icon-hamburger">
+            </div>
+            <div class="img-tablet">
+                <img src="/static/icon-hamburger.png" alt="hamburger-menu" class="icon-hamburger">
+            </div>
+
+            <div class="img-web">
+                <!-- Web Sticky Header -->
+                <div class="flexbox-horizontal-web" style="align-items: center;">
+                    <img src="/static/icon-angel.png" alt="icon-angel" class="icon-angel">
+                    <div>
+                        <a href="/home" class="menu">首頁</a>
+                        <a href="/forms" class="menu">傳情 &#9993;&#xFE0F;</a>
+                        <a href="/board" class="menu">留言板 &#9997;&#xFE0F;</a>
+                        <a href="/vote" class="menu">投票所 &#128499;</a>
+                        <a href="/thanks_card" class="menu">謝師函 &#127880;</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+
+        <!-- Mobile Hamburger Menu -->
+        <div id="hamburger-menu" class="">
+            <a href="/home" class="menu">首頁</a>
+            <a href="/forms" class="menu">傳情 &#9993;&#xFE0F;</a>
+            <a href="/board" class="menu">留言板 &#9997;&#xFE0F;</a>
+            <a href="/vote" class="menu">投票所 &#128499;</a>
+            <a href="/thanks_card" class="menu">謝師函 &#127880;</a>
+            <img src="/static/icon-close.png" alt="icon-close" class="icon-close">
+        </div>
+        
+        <section id="write" class="center-aligned flexbox-vertical-web">
+            <h1>留言板</h1>
+            <p class="whygoup" style="text-align: center;">想留什麼話都可以喔！</p>
+            <button id="btn-show" class="button-yellow button-form whygoup" onclick="showForm()">我要留言</button>
+
+            <form action="/board" method="POST" id="form-write" class="whygoup" onsubmit="return confirm('檢查好內容了嗎？');"> <!--這邊send result是不是要改-->
+                <input type="text" id="nickname" name="nickname" placeholder="在這輸入暱稱" required> <!--value傳入暱稱欄位-->
+                <textarea id="exampleFormControlTextarea1" rows="3" name="content" placeholder="說什麼好呢... &#128172;" required></textarea> <!--value傳入內容欄位-->
+                <input type="hidden" id="tag" name="tag" value=""> <!--value傳入標籤欄位-->
+                <label>選擇代表標籤</label>
+
+                <div id="tag-list" class="flexbox-horizontal-tag">
+                    <label for="selected-item-1" class="selected-card">
+                        <div class="selected-content" id="selected-content-1">
+                            <input type="radio" name="selected-item" id="selected-item-1" value="/static/icon/icon-angel.png" checked="checked">
+                            <img src="/static/icon/icon-angel.png" alt="icon-angel" class="icon-board-select">
+                            <p>小計</p>
+                        </div>
+                    </label>
+
+                    <label for="selected-item-2" class="selected-card">
+                        <div class="selected-content" id="selected-content-2">
+                            <input type="radio" name="selected-item" id="selected-item-2" value="/static/icon/icon-wish.png">
+                            <img src="/static/icon/icon-wish.png" alt="icon-wish" class="icon-board-select">
+                            <p>許願</p>
+                        </div>
+                    </label>
+
+                    <label for="selected-item-3" class="selected-card">
+                        <div class="selected-content" id="selected-content-3">
+                            <input type="radio" name="selected-item" id="selected-item-3" value="/static/icon/icon-heart.png">
+                            <img src="/static/icon/icon-heart.png" alt="icon-heart" class="icon-board-select">
+                            <p>愛心</p>
+                        </div>
+                    </label>
+
+                    <label for="selected-item-4" class="selected-card">
+                        <div class="selected-content" id="selected-content-4">
+                            <input type="radio" name="selected-item" id="selected-item-4" value="/static/icon/icon-book-1.png">
+                            <img src="/static/icon/icon-book-1.png" id="icon-book" alt="icon-book" class="icon-board-select">
+                            <p>會計 <img src="/static/icon-refresh.png" alt="icon-refresh" id="refresh-book" class="icon-refresh"></p>
+                        </div>
+                    </label>
+
+                    <label for="selected-item-5" class="selected-card">
+                        <div class="selected-content" id="selected-content-5">
+                            <input type="radio" name="selected-item" id="selected-item-5" value="/static/icon/icon-grad.png">
+                            <img src="/static/icon/icon-grad.png" alt="icon-grad" class="icon-board-select">
+                            <p>畢業</p>
+                        </div>
+                    </label>
+
+                    <label for="selected-item-6" class="selected-card">
+                        <div class="selected-content" id="selected-content-6">
+                            <input type="radio" name="selected-item" id="selected-item-6" value="/static/icon/icon-sports-1.png">
+                            <img src="/static/icon/icon-sports-1.png" id="icon-sports" alt="icon-sports" class="icon-board-select">
+                            <p>開打 <img src="/static/icon-refresh.png" alt="icon-refresh" id="refresh-sports" class="icon-refresh"></p> 
+                        </div>
+                    </label>
+
+                    <label for="selected-item-7" class="selected-card">
+                        <div class="selected-content" id="selected-content-7">
+                            <input type="radio" name="selected-item" id="selected-item-7" value="/static/icon/icon-music.png">
+                            <img src="/static/icon/icon-music.png" alt="icon-music" class="icon-board-select">
+                            <p>開唱</p>
+                        </div>
+                    </label>
+
+                    <label for="selected-item-8" class="selected-card">
+                        <div class="selected-content" id="selected-content-8">
+                            <input type="radio" name="selected-item" id="selected-item-8" value="/static/icon/icon-trip.png">
+                            <img src="/static/icon/icon-trip.png" alt="icon-trip" class="icon-board-select">
+                            <p>出去玩</p>
+                        </div>
+                    </label>
+
+                </div>
+
+                <div id="navigation" class="flexbox-horizontal center-aligned">
+                    <div id="dot-1" class="dot dot-selected"></div>
+                    <div id="dot-2" class="dot dot-unselected"></div>
+                    <div id="dot-3" class="dot dot-unselected"></div>
+                    <div id="dot-4" class="dot dot-unselected"></div>
+                    <div id="dot-5" class="dot dot-unselected"></div>
+                    <div id="dot-6" class="dot dot-unselected"></div>
+                    <div id="dot-7" class="dot dot-unselected"></div>
+                    <div id="dot-8" class="dot dot-unselected"></div>
+                </div>
+
+                <br><br>
+                
+                <div class="flexbox-vertical">
+                    <button type="submit" class="button-yellow button-form">確認送出</button>
+                    <a onclick="closeForm()">改變主意了</a>
+                </div>
+            </form>
+        </section>
+
+        <section id="board" class="center-aligned">
+            <div class="msg">
+                <span class="msg-tag"></span>
+                <span class="msg-name-span">
+                    <img src="/static/icon/icon-angel.png" class="msg-tag-img">
+                    <small>小計</small>
+                </span>
+                
+                <div class="msg-content"><p>
+                    恭喜大家畢業了！<br>
+                    歡迎在這邊留言喔～<br></p>
+                </div>
+            </div>
+
+            <div class="msg">
+                <span class="msg-tag"></span>
+                <span class="msg-name-span">
+                    <img src="/static/icon/icon-angel.png" class="msg-tag-img">
+                    <small>小計</small>
+                </span>
+                
+                <div class="msg-content"><p>
+                    恭喜大家畢業了！<br>恭喜大家畢業了！<br>恭喜大家畢業了！<br>恭喜大家畢業了！<br>
+                    歡迎在這邊留言喔～<br></p>
+                </div>
+            </div>
+
+            <div class="msg">
+                <span class="msg-tag"></span>
+                <span class="msg-name-span">
+                    <img src="/static/icon/icon-angel.png" class="msg-tag-img">
+                    <small>小計</small>
+                </span>
+                
+                <div class="msg-content"><p>
+                    恭喜大家畢業了！<br>
+                    歡迎在這邊留言喔～<br></p>
+                </div>
+            </div>
+
+            {% for table in dat %}
+            <div class="msg">
+                <span class="msg-tag"></span>
+                <span class="msg-name-span">
+                    <img src="{{ table['tag_url'] }}" class="msg-tag-img">
+                    <small>{{ table['knickname'] }}</small>
+                </span>
+                
+                <div class="msg-content">
+                    <p>{{ table['content'] }}</p>
+                </div>
+            </div>
+            {% endfor %}
+
+        </section>
+
+    </div>
+
+    <footer class="flexbox-horizontal">
+        <div class="flexbox-vertical" style="align-items: flex-start;">
+            <tiny>@NCCU ACCT 2021</tiny>>
+            <tiny style="position: relative; top: -10px;">By MengChiehLiu  |  Lili Lin</tiny>
+        </div>
+        <img src="/static/icon-github.png" alt="icon-github" class="icon-github">
+    </footer>
+
+    </body>
+
+    <script src="/static/hamburger-menu.js"></script>
+    <script src="/static/up-scroll-header.js"></script>
+    <script src="/static/board.js"></script>
+</html>
