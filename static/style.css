@@ -544,7 +544,6 @@
         top:50%;
         transform:translateY(-50%);
         margin:auto;
-        text-align:center;
      }
   
      .hover-box:hover .info-box {
@@ -1102,7 +1101,6 @@
         top:50%;
         transform:translateY(-50%);
         margin:auto;
-        text-align:center;
      }
   
      .hover-box:hover .info-box {
@@ -1660,7 +1658,6 @@
         top:50%;
         transform:translateY(-50%);
         margin:auto;
-        text-align:center;
      }
   
      .hover-box:hover .info-box {
