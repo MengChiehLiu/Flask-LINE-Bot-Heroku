@@ -104,9 +104,10 @@ def board():
     if request.method == "GET":
         conn = psycopg2.connect(DATABASE_URL, sslmode='require')
         sql = "select * from board;"
-        table = pd.read_sql_query(sql, conn)
+        dat = pd.read_sql_query(sql, conn)
+        table = zip(dat["tag_url"], dat["nickname"], dat["content"])
         conn = None
-        return render_template("board.html", dat=table)
+        return render_template("board.html", table=table)
     if request.method == "POST":
         try:
             nickname = request.form.get("nickname")
