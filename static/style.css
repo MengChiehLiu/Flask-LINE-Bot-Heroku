@@ -540,10 +540,10 @@
      } 
   
      .hover-box .info-box .info-content{
-        position:absolute;
+        position:relative;
         top:50%;
         transform:translateY(-50%);
-        padding:15px;
+        margin:auto;
      }
   
      .hover-box:hover .info-box {
@@ -1097,10 +1097,10 @@
      } 
   
      .hover-box .info-box .info-content{
-        position:absolute;
+        position:relative;
         top:50%;
         transform:translateY(-50%);
-        padding:15px;
+        margin:auto;
      }
   
      .hover-box:hover .info-box {
@@ -1654,10 +1654,10 @@
      } 
   
      .hover-box .info-box .info-content{
-        position:absolute;
+        position:relative;
         top:50%;
         transform:translateY(-50%);
-        padding:15px;
+        margin:auto;
      }
   
      .hover-box:hover .info-box {
