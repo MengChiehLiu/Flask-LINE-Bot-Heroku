@@ -2,7 +2,7 @@ import os
 from random import randint
 import pandas as pd
 import psycopg2
-from flask import Flask, abort, request, render_template
+from flask import Flask, abort, request, render_template, redirect, url_for
 
 # https://github.com/line/line-bot-sdk-python
 from linebot import LineBotApi, WebhookHandler
