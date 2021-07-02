@@ -204,18 +204,17 @@
                 </div>
             </div>
 
-            {% for table in dat %}
-            <div class="msg">
-                <span class="msg-tag"></span>
-                <span class="msg-name-span">
-                    <img src="{{ table['tag_url'] }}" class="msg-tag-img">
-                    <small>{{ table['knickname'] }}</small>
-                </span>
-                
-                <div class="msg-content">
-                    <p>{{ table['content'] }}</p>
+            {% for x,y,z in table %}
+                <div class="msg">
+                    <span class="msg-tag"></span>
+                    <span class="msg-name-span">
+                        <img src="{{x}}" class="msg-tag-img">
+                        <small>{{y}}</small>
+                    </span>
+                    <div class="msg-content">
+                        <p>{{z}}</p>
+                    </div>
                 </div>
-            </div>
             {% endfor %}
 
         </section>
