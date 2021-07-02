@@ -99,6 +99,32 @@ def youshouldneverbehere():
     except:
         return "Error :("
 
+@app.route("/board", methods=["GET", "POST"])
+def board():
+    if request.method == "GET":
+        conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+        sql = "select * from board;"
+        table = pd.read_sql_query(sql, conn)
+        conn = None
+        return render_template("board.html", dat=table)
+    if request.method == "POST":
+        try:
+            nickname = request.form.get("nickname")
+            content = request.form.get("content")
+            tag_url = request.form.get("selected-item")
+            conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+            cursor = conn.cursor()
+            record = (nickname, content, tag_url)
+            table_columns = '(nickname, content, tag_url)'
+            query = f"""INSERT INTO board {table_columns} VALUES (%s, %s, %s);"""
+            cursor.execute(query, record)
+            conn.commit()
+            cursor.close()
+            conn.close()
+            return redirect(url_for('board'))
+        except:
+            return render_template("fail2.html")    
+    
     
 @handler.add(FollowEvent)
 def follow(event):
