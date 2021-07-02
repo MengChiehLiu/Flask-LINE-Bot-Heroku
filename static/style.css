@@ -143,6 +143,69 @@
         padding-top: 50px;
         margin-bottom: 40px;
     }
+        /* board.html */
+    #write {
+        position: relative;
+        padding-top: 50px;
+        width: 90%;
+    }
+    #write .whygoup {
+        position: relative;
+        top: -32px;
+    }
+    #form-write {
+        display: none;
+        position: relative;
+        width: 100%;
+    }
+    #tag-list {
+        width: 100%;
+        overflow-x: scroll;
+        margin-top: 8px;
+    }
+    #board {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        width: 90%;
+        height: auto;
+        margin-bottom: 80px;
+    }
+    .msg {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-bottom: 24px;
+        padding: 6px 10px 8px 16px;
+        background-color: rgba(246, 247, 251, 0.1);
+        border-radius: 8px;
+    }
+    .msg-tag {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 8px;
+        height: 100%;
+        background: #FFDA79;
+        border-radius: 8px 0px 0px 8px;
+    }
+    .msg-name-span {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .msg-tag-img {
+        position: relative;
+        width: 36px;
+        height: 36px;
+        margin-right: 12px;
+    }
+        /* votes.html */
+    #vote {
+        position: relative;
+    }
         /* success.html */
     #success {
         position: relative;
@@ -188,6 +251,14 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+    }
+    .flexbox-horizontal-tag {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
     }
     .center-aligned {
         margin-left: auto;
@@ -384,6 +455,29 @@
     .button-white:hover {
         box-shadow: 0px 2px 20px rgba(255, 249, 227, 0.6);
     }
+    input {
+        display:inline-block;
+        position: relative;
+        width: 100%;
+        height: 42px;
+        overflow:hidden;
+        padding: 4px 12px;
+        margin-bottom: 8px;
+
+        background: #F6F7FB;
+        border:0px;
+        border-radius: 12px;
+        outline:none;
+        box-shadow: 0px 0px 0px rgba(0,0,0,0);
+
+        font-family: "GenSenMaruGothicTW";
+        font-style: normal;
+        font-weight: medium;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+        color: #3E4655;
+    }
     select {
         display:inline-block;
         position: relative;
@@ -487,7 +581,7 @@
         position: absolute;
         margin-left: auto;
         margin-right: auto;
-        bottom: 10%;
+        bottom: 16%;
         width: 24px;
         height: 24px;
     }
@@ -503,7 +597,73 @@
         width: 24px;
         height: 24px;
     }
-    .hover-box {
+    .icon-refresh {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Tag Radio Buttons */
+    .selection-wrapper input {
+        visibility: hidden;
+    }
+    .selected-content{
+        width: 100px;
+        height: 108px;
+        background: rgba(246, 247, 251, 0.08);
+        border: 2px solid rgba(246, 247, 251, 0.8);
+        margin-right: 12px;
+        box-sizing: border-box;
+        border-radius: 12px;
+    }
+    .selected-content input {
+        opacity: 0;
+    }
+    .selected-content img {
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        left: 18px;
+        top: 12px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .selected-content img.icon-refresh {
+        position: relative;
+        width: 16px;
+        height: 16px;
+        left: 0;
+        top: 0;
+        margin: unset;
+    }
+    .selected-content p {
+        position: relative;
+        top: 12px;
+        font-size: 13px;
+        line-height: 13px;
+        text-align: center;
+    }
+
+    /* Dot Navigation */
+    #navigation {
+        position: relative;
+        margin-top: 4px;
+        width: 148px;
+        height: 8px;
+    }
+    .dot {
+        position: relative;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #F6F7FB;
+    }
+    .dot-selected {
+        opacity: 0.92;
+    }
+    .dot-unselected {
+        opacity: 0.5;
+    }
+          .hover-box {
         max-width: 100%;
         max-height: 100%;
         margin: auto;
@@ -540,10 +700,10 @@
      } 
   
      .hover-box .info-box .info-content{
-        position:relative;
+        position:absolute;
         top:50%;
         transform:translateY(-50%);
-        margin:auto;
+        padding:15px;
      }
   
      .hover-box:hover .info-box {
@@ -685,6 +845,69 @@
         padding-top: 40px;
         margin-bottom: 60px;
     }
+        /* board.html */
+    #write {
+        position: relative;
+        padding-top: 50px;
+        width: 90%;
+    }
+    #write .whygoup {
+        position: relative;
+        top: -72px;
+    }
+    #form-write {
+        display: none;
+        position: relative;
+        width: 100%;
+    }
+    #tag-list {
+        width: 100%;
+        overflow-x: scroll;
+        margin-top: 8px;
+    }
+    #board {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        width: 90%;
+        height: auto;
+        margin-bottom: 80px;
+    }
+    .msg {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+        padding: 16px 10px 6px 28px;
+        background-color: rgba(246, 247, 251, 0.1);
+        border-radius: 12px;
+    }
+    .msg-tag {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 12px;
+        height: 100%;
+        background: #FFDA79;
+        border-radius: 12px 0px 0px 12px;
+    }
+    .msg-name-span {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .msg-tag-img {
+        position: relative;
+        width: 54px;
+        height: 54px;
+        margin-right: 12px;
+    }
+        /* votes.html */
+    #vote {
+        position: relative;
+    }
     .flexbox-vertical {
         display: flex;
         flex-direction: column;
@@ -716,6 +939,14 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
+    }
+    .flexbox-horizontal-tag {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
         justify-content: space-between;
     }
     .center-aligned {
@@ -933,6 +1164,29 @@
     .button-white:hover {
         box-shadow: 0px 2px 20px rgba(255, 249, 227, 0.6);
     }
+    input {
+        display:inline-block;
+        position: relative;
+        width: 100%;
+        height: 64px;
+        overflow:hidden;
+        padding: 4px 12px;
+        margin-bottom: 16px;
+
+        background: #F6F7FB;
+        border:0px;
+        border-radius: 12px;
+        outline:none;
+        box-shadow: 0px 0px 0px rgba(0,0,0,0);
+
+        font-family: "GenSenMaruGothicTW";
+        font-style: normal;
+        font-weight: medium;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 0.04em;
+        color: #3E4655;
+    }
     select {
         display:inline-block;
         position: relative;
@@ -1044,7 +1298,7 @@
         position: absolute;
         margin-left: auto;
         margin-right: auto;
-        bottom: 6%;
+        bottom: 10%;
         width: 36px;
         height: 35px;
     }
@@ -1060,7 +1314,73 @@
         width: 36px;
         height: 36px;
     }
-    .hover-box {
+    .icon-refresh {
+        width: 22px;
+        height: 22px;
+    }
+
+    /* Tag Radio Buttons */
+    .selection-wrapper input {
+        visibility: hidden;
+    }
+    .selected-content{
+        width: 120px;
+        height: 144px;
+        background: rgba(246, 247, 251, 0.08);
+        border: 2px solid rgba(246, 247, 251, 0.8);
+        margin-right: 12px;
+        box-sizing: border-box;
+        border-radius: 12px;
+    }
+    .selected-content input {
+        opacity: 0;
+    }
+    .selected-content img {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        left: 20px;
+        top: 14px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .selected-content img.icon-refresh {
+        position: relative;
+        width: 16px;
+        height: 16px;
+        left: 0;
+        top: 0;
+        margin: unset;
+    }
+    .selected-content p {
+        position: relative;
+        top: 0px;
+        font-size: 22px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    /* Dot Navigation */
+    #navigation {
+        position: relative;
+        margin-top: 12px;
+        width: 208px;
+        height: 12px;
+    }
+    .dot {
+        position: relative;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #F6F7FB;
+    }
+    .dot-selected {
+        opacity: 0.92;
+    }
+    .dot-unselected {
+        opacity: 0.5;
+    }
+          .hover-box {
         max-width: 100%;
         max-height: 100%;
         margin: auto;
@@ -1097,10 +1417,10 @@
      } 
   
      .hover-box .info-box .info-content{
-        position:relative;
+        position:absolute;
         top:50%;
         transform:translateY(-50%);
-        margin:auto;
+        padding:15px;
      }
   
      .hover-box:hover .info-box {
@@ -1260,10 +1580,68 @@
         padding-top: 40px;
         margin-bottom: 60px;
     }
+        /* board.html */
+    #write {
+        position: relative;
+        padding-top: 50px;
+        width: 72%;
+    }
+    #write .whygoup {
+        position: relative;
+        top: -60px;
+    }
+    #form-write {
+        display: none;
+        position: relative;
+        width: 100%;
+    }
+    #tag-list {
+        width: 100%;
+        overflow-x: scroll;
+    }
+    #board {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        width: 92%;
+        height: auto;
+        margin-bottom: 80px;
+    }
+    .msg {
+        position: relative;
+        width: auto;
+        min-width: 360px;
+        height: auto;
+        margin: 24px;
+        padding: 16px 10px 8px 28px;
+        background-color: rgba(246, 247, 251, 0.1);
+        border-radius: 12px;
+    }
+    .msg-tag {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 12px;
+        height: 100%;
+        background: #FFDA79;
+        border-radius: 12px 0px 0px 12px;
+    }
+    .msg-name-span {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .msg-tag-img {
+        position: relative;
+        width: 48px;
+        height: 48px;
+        margin-right: 12px;
+    }
         /* votes.html */
     #vote {
         position: relative;
-        top: 68px;
     }
     .flexbox-vertical {
         display: flex;
@@ -1299,6 +1677,14 @@
         align-items: center;
         justify-content: space-between;
     }
+    .flexbox-horizontal-tag {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
     .center-aligned {
         margin-left: auto;
         margin-right: auto;
@@ -1332,7 +1718,6 @@
     }
     .timetaco-list {
         position: relative;
-        top: 68px;
     }
     #scroll-more {
         position: absolute;
@@ -1491,6 +1876,29 @@
     .button-white:hover {
         box-shadow: 0px 2px 20px rgba(255, 249, 227, 0.6);
     }
+    input {
+        display:inline-block;
+        position: relative;
+        width: 100%;
+        height: 64px;
+        overflow:hidden;
+        padding: 15px 12px;
+        margin-bottom: 16px;
+
+        background: #F6F7FB;
+        border:0px;
+        border-radius: 12px;
+        outline:none;
+        box-shadow: 0px 0px 0px rgba(0,0,0,0);
+
+        font-family: "GenSenMaruGothicTW";
+        font-style: normal;
+        font-weight: medium;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 0.04em;
+        color: #3E4655;
+    }
     select {
         display:inline-block;
         position: relative;
@@ -1617,7 +2025,73 @@
         width: 20px;
         height: 20px;
     }
-    .hover-box {
+    .icon-refresh {
+        width: 16px;
+        height: 16px;
+    }
+
+    /* Tag Radio Buttons */
+    .selection-wrapper input {
+        visibility: hidden;
+    }
+    .selected-content{
+        width: 148px;
+        height: 160px;
+        background: rgba(246, 247, 251, 0.08);
+        border: 2px solid rgba(246, 247, 251, 0.8);
+        margin-right: 32px;
+        box-sizing: border-box;
+        border-radius: 12px;
+    }
+    .selected-content input {
+        opacity: 0;
+    }
+    .selected-content img {
+        position: absolute;
+        width: 92px;
+        height: 92px;
+        left: 28px;
+        top: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .selected-content img.icon-refresh {
+        position: relative;
+        width: 16px;
+        height: 16px;
+        left: 0;
+        top: 0;
+        margin: unset;
+    }
+    .selected-content p {
+        position: relative;
+        top: 6px;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    /* Dot Navigation */
+    #navigation {
+        position: relative;
+        margin-top: 16px;
+        width: 236px;
+        height: 12px;
+    }
+    .dot {
+        position: relative;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #F6F7FB;
+    }
+    .dot-selected {
+        opacity: 0.92;
+    }
+    .dot-unselected {
+        opacity: 0.5;
+    }
+       .hover-box {
         max-width: 100%;
         max-height: 100%;
         margin: auto;
@@ -1654,14 +2128,13 @@
      } 
   
      .hover-box .info-box .info-content{
-        position:relative;
+        position:absolute;
         top:50%;
         transform:translateY(-50%);
-        margin:auto;
+        padding:15px;
      }
   
      .hover-box:hover .info-box {
         transform:scaleY(1);
      }
 }
-    
