@@ -105,6 +105,7 @@ def board():
         conn = psycopg2.connect(DATABASE_URL, sslmode='require')
         sql = "select * from board;"
         dat = pd.read_sql_query(sql, conn)
+        dat=dat.iloc[::-1]
         table = zip(dat["tag_url"], dat["nickname"], dat["content"])
         conn = None
         return render_template("board.html", table=table)
