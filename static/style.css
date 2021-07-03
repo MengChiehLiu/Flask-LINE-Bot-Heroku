@@ -700,10 +700,10 @@
      } 
   
      .hover-box .info-box .info-content{
-        position:relative;
+        position:absolute;
         top:50%;
         transform:translateY(-50%);
-        margin:auto;
+        padding:15px;
      }
   
      .hover-box:hover .info-box {
@@ -1425,10 +1425,10 @@
      } 
   
      .hover-box .info-box .info-content{
-        position:relative;
+        position:absolute;
         top:50%;
         transform:translateY(-50%);
-        margin:auto;
+        padding:15px;
      }
   
      .hover-box:hover .info-box {
@@ -2144,10 +2144,10 @@
      } 
   
      .hover-box .info-box .info-content{
-        position:relative;
+        position:absolute;
         top:50%;
         transform:translateY(-50%);
-        margin:auto;
+        padding:15px;
      }
   
      .hover-box:hover .info-box {
