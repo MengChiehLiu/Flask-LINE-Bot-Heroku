@@ -165,6 +165,19 @@
         </section>
 
         <section id="board" class="center-aligned">
+            {% for x,y,z in table %}
+                <div class="msg">
+                    <span class="msg-tag"></span>
+                    <span class="msg-name-span">
+                        <img src="{{x}}" class="msg-tag-img">
+                        <small>{{y}}</small>
+                    </span>
+                    <div class="msg-content">
+                        <p>{{z}}</p>
+                    </div>
+                </div>
+            {% endfor %}
+            
             <div class="msg">
                 <span class="msg-tag"></span>
                 <span class="msg-name-span">
@@ -203,19 +216,6 @@
                     歡迎在這邊留言喔～<br></p>
                 </div>
             </div>
-
-            {% for x,y,z in table %}
-                <div class="msg">
-                    <span class="msg-tag"></span>
-                    <span class="msg-name-span">
-                        <img src="{{x}}" class="msg-tag-img">
-                        <small>{{y}}</small>
-                    </span>
-                    <div class="msg-content">
-                        <p>{{z}}</p>
-                    </div>
-                </div>
-            {% endfor %}
 
         </section>
 
