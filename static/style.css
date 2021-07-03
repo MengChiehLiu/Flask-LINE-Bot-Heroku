@@ -700,15 +700,23 @@
      } 
   
      .hover-box .info-box .info-content{
-        position:absolute;
+        position:relative;
         top:50%;
         transform:translateY(-50%);
-        padding:15px;
+        margin:auto;
      }
   
      .hover-box:hover .info-box {
         transform:scaleY(1);
      }
+   
+    .flexbox-horizontal-button2 {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1000px) {
@@ -1417,15 +1425,23 @@
      } 
   
      .hover-box .info-box .info-content{
-        position:absolute;
+        position:relative;
         top:50%;
         transform:translateY(-50%);
-        padding:15px;
+        margin:auto;
      }
   
      .hover-box:hover .info-box {
         transform:scaleY(1);
      }
+   
+    .flexbox-horizontal-button2 {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 2000px) {
@@ -2128,13 +2144,21 @@
      } 
   
      .hover-box .info-box .info-content{
-        position:absolute;
+        position:relative;
         top:50%;
         transform:translateY(-50%);
-        padding:15px;
+        margin:auto;
      }
   
      .hover-box:hover .info-box {
         transform:scaleY(1);
      }
+   
+    .flexbox-horizontal-button2 {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
 }
