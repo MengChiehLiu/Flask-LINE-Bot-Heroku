@@ -739,13 +739,15 @@
         }
 
     .user .name {
+        font-style: normal;
+        font-weight: medium;
         margin-top:3px;
         font-size: 12px;
         color: rgb(255, 255, 255);
     }
     .user .text {
         font-style: normal;
-        font-weight: medium;
+        font-weight: normal;
         font-size: 12px;
         line-height: -10px;
         letter-spacing: 0.04em;
