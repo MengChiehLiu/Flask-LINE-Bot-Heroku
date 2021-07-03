@@ -45,6 +45,10 @@ def vote():
 def thanks_card():
     return render_template("thanks_card.html")
 
+@app.route("/teacher_reply") 
+def teacher_reply():
+    return render_template("teacher_reply.html")
+
 @app.route("/forms", methods=['GET']) #根目錄
 def forms():
     conn = psycopg2.connect(DATABASE_URL, sslmode='require')
