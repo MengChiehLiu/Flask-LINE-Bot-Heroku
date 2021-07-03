@@ -663,7 +663,7 @@
     .dot-unselected {
         opacity: 0.5;
     }
-       .hover-box {
+    .hover-box {
         max-width: 100%;
         max-height: 100%;
         margin: auto;
@@ -712,7 +712,7 @@
 
       .dialogue {
         width: 100%;
-        padding: 20px;
+        padding: 10px;
         box-shadow: 0 0 10px #000;
         background-color: rgba(39, 63, 124, 0.6);;
         border-radius: 20px;
@@ -723,7 +723,7 @@
         margin-bottom: 20px;}
 
     .user .avatar {
-        width: 60px;
+        width: 36px;
         text-align: center;
         flex-shrink: 0;
     }
@@ -739,41 +739,39 @@
         }
 
     .user .name {
+        margin-top:3px;
+        font-size: 12px;
         color: rgb(255, 255, 255);
     }
     .user .text {
+        font-style: normal;
+        font-weight: medium;
+        font-size: 12px;
+        line-height: -10px;
+        letter-spacing: 0.04em;
         background-color: #aaa;
-        padding: 16px;
+        padding: 10px;
         border-radius: 10px;
         position: relative;
     }
     .remote .text {
-        margin-left: 20px;
-        margin-right: 30%;
+        margin-left: 10px;
+        margin-right: 25%;
         background-color: #FFDA79;
     }
         
-    .remote .text:before {
-        border-right: 10px solid #FFDA79;
-        left: -10px;
-    }
 
     .local {
         justify-content: flex-end;
     }
 
     .local .text {
-        margin-right: 20px;
-        margin-left: 30%;
+        margin-right: 10px;
+        margin-left: 25%;
         order: -1;
         background-color: #fff;
-        color: #333;
     }
 
-    .local .text:before {
-        border-left: 10px solid #fff;
-        right: -10px;
-    }
     .remote .text:before{content: "";
         position: absolute;
         top: 20px;
@@ -789,12 +787,10 @@
     }
     
     .local .text {
-        font-weight: 300;
         box-shadow: 0 0 10px #888;
     }
 
     .remote .text {
-        font-weight: 300;
         box-shadow: 0 0 10px #888;
     }
 
@@ -1554,6 +1550,7 @@
         }
 
     .user .name {
+       margin-top:5px;
         color: rgb(255, 255, 255);
     }
     .user .text {
@@ -2365,6 +2362,7 @@
         }
 
     .user .name {
+       margin-top:5px;
         color: rgb(255, 255, 255);
     }
     .user .text {
